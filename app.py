@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 import pickle
 import time
-pip install xgboost==0.90
+!pip install xgboost==0.90
 from xgboost import XGBClassifier
 st.title("Bemorlarni klassifikatsiyaga ajratuvchi model..")
 
