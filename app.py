@@ -5,7 +5,6 @@ import streamlit as st
 import pickle
 import time
 from xgboost import XGBClassifier
-import sklearn
 st.title("Klassifikatsiya qiluvchi model..")
 
 with open("xgb_model.pkl", 'rb') as file:
