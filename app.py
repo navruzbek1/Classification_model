@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from sklearn.ensemble RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier
 import streamlit as st
 import pickle
 import time
