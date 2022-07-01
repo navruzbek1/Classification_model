@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 import pickle
 import time
-import xgboost
+from xgboost import XGBClassifier
 st.title("Bemorlarni klassifikatsiyaga ajratuvchi model..")
 
 number = st.number_input('Age')
