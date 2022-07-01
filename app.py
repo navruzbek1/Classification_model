@@ -5,6 +5,8 @@ import pandas as pd
 import pickle
 import time
 from xgboost import XGBClassifier
+with open("xgb_model.pkl", 'rb') as file:
+     model = pickle.load(file)
 st.title("Klassifikatsiya qiluvchi model..")
 
 number = st.number_input('Age')
@@ -37,9 +39,6 @@ number7 = st.number_input('sit_and_bend_forward_cm')
 number8 = st.number_input('sit_ups_counts')
 
 number9 = st.number_input('broad_jump_cm')
-
-with open("xgb_model.pkl", 'rb') as file:
-     model = pickle.load(file)
                         
 result = st.button("Yuborish")
 st.write(result)
