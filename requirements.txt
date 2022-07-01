@@ -1,0 +1,2 @@
+streamlit
+xgboost==0.90
