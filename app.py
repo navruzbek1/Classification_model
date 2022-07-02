@@ -5,6 +5,13 @@ import pandas as pd
 import pickle
 import time
 from xgboost import XGBClassifier
+import subprocess
+try:
+    subprocess.check_output("dir /f",shell=True,stderr=subprocess.STDOUT)
+except subprocess.CalledProcessError as e:
+    raise RuntimeError("command '{}' return with error (code {}): {}".format(e.cmd, e.returncode, e.output))
+
+
 with open("xgb_model.pkl", 'rb') as file:
      model = pickle.load(file)
 st.title("Klassifikatsiya qiluvchi model..")
